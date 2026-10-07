@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RepoLens</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>🔍 RepoLens</h1>
+  </header>
+
+  <section class="repo-input">
+    <label for="repo">Repository</label>
+    <input id="repo" type="text" placeholder="owner/repo or GitHub URL" />
+    <button id="analyze">Analyze Repository</button>
+    <p id="status" class="status"></p>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><span>📁 Files</span><strong id="stat-files">—</strong></div>
+    <div class="stat"><span>📝 Lines</span><strong id="stat-lines">—</strong></div>
+    <div class="stat"><span>👥 Contributors</span><strong id="stat-contributors">—</strong></div>
+    <div class="stat"><span>⭐ Stars</span><strong id="stat-stars">—</strong></div>
+  </section>
+
+  <section class="tools">
+    <h2>Quick Tools</h2>
+    <button class="tool" disabled>Project Structure</button>
+    <button class="tool" disabled>Find API Routes</button>
+    <button class="tool" disabled>Find TODOs</button>
+    <button class="tool" disabled>Dependencies</button>
+    <button class="tool" disabled>Security Scan</button>
+    <button class="tool" disabled>Code Statistics</button>
+    <button class="tool" disabled>Search Code</button>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
